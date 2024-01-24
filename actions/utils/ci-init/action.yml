@@ -40,6 +40,7 @@ runs:
         --status-url=${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         --git-url=${{ github.server_url }}/${{ github.repository }}/tree/${{ github.sha }}
         --commit-hash=${{ github.sha }}
+        --dagster-cloud-yaml-check=skip
         $LOCATION_NAMES_FLAG
       shell: bash
 
